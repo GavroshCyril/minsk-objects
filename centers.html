@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title class="lang" key="shopping">Торгово-развлекательные центры</title>
+	<meta name="description" content="Торгово-развлекательные центры города Минска">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="/images/favicon.png">
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
+
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/media.css">
+
+	<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+</head>
+
+<body>
+	
+	<header class="header">
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6 user">
+						<li>
+							<a href="/pages/authorization.html">
+								<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+							</a>
+						</li>
+						
+					</div>
+
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><a href="/index.html" class="top-menu__link lang" key="home">Главная</a></li>
+						<li class="top-menu__item"><a href="/musems.html" class="top-menu__link lang" key="musems">Музеи</a></li>
+						<li class="top-menu__item"><a href="/theaters.html" class="top-menu__link lang" key="theaters">Театры</a></li>
+						<li class="top-menu__item"><a href="/cinema.html" class="top-menu__link lang" key="cinemas">Кинотеатры</a></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
+						<li class="top-menu__item"><a href="/churches.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
+						<li class="top-menu__item"><span class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</span></li>
+						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 d-none d-lg-block nav-search-wrap">
+					<ul class="languages">
+						<li class="navbar-item-lang-en">
+							<button id="en" class="translate">en</button>
+						</li>
+						<li class="navbar-item-lang-en">
+							<button id="ru" class="translate">ru</button>
+						</li>
+					</ul>
+
+					<!-- ПОИСК -->
+					<!-- <div class="nav-search">
+						
+						<input class="search__txt lang" type="text" name="" placeholder="Поиск..." id='input' key="find">
+						<a class="search__btn" href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</div> -->
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a href="#centers"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
+</header>
+
+	<div class="home-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/Centers/cetners-main.jpeg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="centersMinsk">Торгово-развлекательные центры г.Минска</h2>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<section class="best-works">
+		<div class="filtration">
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang" key="Pervomaiski district" onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
+				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+		</div>
+
+		<div class="best-works__bottom">
+			<a name="centers"></a>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
+						<a href="/pages/centers/titan.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Centers/Titan/titan-01.jpg" alt="ТРЦ Титан">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="просп. Дзержинского, 104, корп. 2" key="prospect84">просп. Независимости, 84/1</div>
+								<div class="best-item__desc lang" key="titan">ТРЦ "Титан"</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
+						<a href="/pages/centers/danamall.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Centers/DanaMall/dana-mall-01.jpg" alt="Dana Mall">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Петра Мстиславца, 11" key="petra">ул. Петра Мстиславца, 11</div>
+								<div class="best-item__desc lang" key="dana">ТЦ "Dana Mall"</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="/pages/centers/gallery.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Centers/Gallery/Gallery-01.jpeg" alt="ТЦ Галлерея">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="просп. Победителей, 9" key="prospect9">просп. Победителей, 9</div>
+								<div class="best-item__desc lang" key="gallery">ТЦ "Галлерея"</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				
+			</div>
+
+		<!-- 	<div id="click-to-hide" class="best-works__button-wrapper">
+				<button id="button" class="button button__text lang" key="more objects" >
+					Больше объектов
+				</button>
+			</div> -->
+
+		</div>
+
+	</section>
+
+	
+
+	
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/micromodal/micromodal.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="js/common.js"></script>
+	<script src="/js/filter.js"></script>
+</body>
+
+</html>

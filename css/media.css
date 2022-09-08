@@ -1,0 +1,192 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+	.top-menu__item {
+		margin: 0;
+	}
+	.top-menu__link {
+		padding: 6px 10px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+	.top-menu__item {
+		margin: 0;
+	}
+	.top-menu__link {
+		padding: 6px 10px;
+	}
+
+	.home-callback__list > * {
+		width: 49%;
+	}
+
+	.advantages-slider__caption {
+		right: var(--gutter);
+	}
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+	.top-menu {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		background-color: var(--dark);
+		right: 35px;
+		top: -7px;
+		border-radius: var(--radius);
+		overflow: hidden;
+	}
+	.top-menu__item {
+		display: block;
+	}
+	.top-menu__link {
+		display: block;
+		text-align: left;
+		padding: 14px 35px;
+		border-bottom: 1px solid rgba(255,255,255, .05);
+		color: rgb(0, 0, 0);
+		border-radius: 0;
+		line-height: 1.5;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	.top-menu__link:hover,
+	.top-menu__link:focus,
+	span.top-menu__link {
+		color: rgba(0, 0, 0, 0.408);
+		background-color: rgba(157, 157, 157, 0.303);
+	}
+	.menu-toggle {
+		display: block;
+	}
+
+	.home-callback__list,
+	.home-callback__header {
+		display: none;
+	}
+	.home-callback__text-right {
+		text-align: center;
+	}
+	.home-callback__phone {
+		display: block;
+	}
+
+	.best-item__desc {
+		font-size: 16px;
+	}
+	.best-works__top {
+		padding-top: 40px;
+		padding-bottom: 155px;
+	}
+
+	.item-advantages__more,
+	.item-advantages__desc {
+		display: none;
+	}
+	.item-advantages__heading {
+		font-size: 16px;
+	}
+	.item-advantages__heading img {
+		margin-right: 10px;
+	}
+
+	.languages{
+		display: flex;
+	}
+	
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+	.best-works__left {
+		display: none;
+	}
+	.best-works__right {
+		flex: 1;
+		margin: 0;
+		padding: 0;
+	}
+	.best-item__desc {
+		font-size: 20px;
+	}
+	.best-works__button-wrapper {
+		margin-top: 15px;
+	}
+
+	.advantages-slider {
+		display: none;
+	}
+	.advantages {
+		padding: 40px 0 30px;
+	}
+	.item-advantages__more,
+	.item-advantages__desc {
+		display: block;
+	}
+	.item-advantages__heading {
+		font-size: 19px;
+	}
+	.item-advantages {
+		padding: var(--gutter);
+		background-color: var(--light-bg);
+		padding: 30px 20px 55px;
+	}
+	.item-advantages__more {
+		bottom: 20px;
+	}
+	.section-title__paragraph {
+		margin-bottom: 30px;
+	}
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+	.home-slider__heading {
+		font-size: 40px;
+	}
+
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+
+}

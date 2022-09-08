@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title class="lang" key="eckursia">Экскурсионно-развлекательные объекты г. Минска</title>
+	<meta name="description" content="Titan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="/images/favicon.png">
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
+
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/libs/micromodal/micromodal.css">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/media.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6 user">
+						<li>
+							<a href="/pages/authorization.html">
+								<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+							</a>
+						</li>
+						
+					</div>
+
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><a href="/index.html" class="top-menu__link lang" key="home">Главная</a></li>
+						<li class="top-menu__item"><a href="/musems.html" class="top-menu__link lang" key="musems">Музеи</a></li>
+						<li class="top-menu__item"><a href="/theaters.html" class="top-menu__link lang" key="theaters">Театры</a></li>
+						<li class="top-menu__item"><a href="/cinema.html" class="top-menu__link lang" key="cinemas">Кинотеатры</a></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
+						<li class="top-menu__item"><a href="/centers.html" class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</a></li>
+						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 d-none d-lg-block nav-search-wrap">
+					<ul class="languages">
+						<li class="navbar-item-lang-en">
+							<button id="en" class="translate">en</button>
+						</li>
+						<li class="navbar-item-lang-en">
+							<button id="ru" class="translate">ru</button>
+						</li>
+					</ul>
+
+					<!-- ПОИСК -->
+					<!-- <div class="nav-search">
+						
+						<input class="search__txt lang" type="text" name="" placeholder="Поиск..." id='input' key="find">
+						<a class="search__btn" href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</div> -->
+					
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="home-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide home-slider__slide" style="background-image: url(/images/Centers/Titan/titan-02.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="">Развлекательный-центр "Титан"</h2>
+					<p data-animate="bottom" class="home-slider__text lang" key="">Развлекательный центр «Титан» – лучшие традиции отдыха для детей и их родителей. Совмещая приятное с полезным, развлекательный центр дарит заряд позитива, массу положительных эмоций, предлагая активный отдых для всей семьи. </p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<section class="best-works">
+		
+		<div class="filtration">
+			
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+				<button class="btn lang" key="bouling" onclick="filterSelection('bouling')">Боулинг</button>
+				<button class="btn lang"  key="detskij-labirint"  onclick="filterSelection('detskij-labirint')">Детский лабиринт</button>
+				<button class="btn lang" key="lazertag" onclick="filterSelection('lazertag')">Лазертаг</button>
+				<button class="btn lang"  key="kvestyi"  onclick="filterSelection('kvestyi')">Квесты</button>
+				<button class="btn lang" key="gamezone" onclick="filterSelection('gamezone')">Gamezone</button>
+				<button class="btn lang" key="cafe" onclick="filterSelection('cafe')">Кафе</button>
+		</div>
+
+		<div class="best-works__bottom">
+			<a name="others"></a>
+			<div class="container">
+				<div class="row">
+					<h2>Развлекательные мероприятия:</h2>
+					<div class="col-md-4 best-works__item-wrapper filterDiv bouling shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/bouling/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Боулинг">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Боулинг</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv detskij-labirint shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/detskij-labirint/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Детский лабиринт">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Детский лабиринт</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv lazertag shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/lazertag/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Лазертаг">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Лазертаг</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv kvestyi shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/kvestyi/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Квесты">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Квесты</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv gamezone shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/gamezone/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Gamezone">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Gamezone</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv cafe shopping">
+						<a href="https://www.titanminsk.by/semejnyij-razvlekatelnyij-czentr/kafe/" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="/images/Centers/icons/titan.jpg" alt="Кафе">
+							</div>
+							<div class="best-item__content">
+								<div class="best-item__desc lang" key="">Кафе</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+				
+
+				<div class="modal micromodal-slide" id="modal">
+					<div class="modal__overlay" data-custom-close>
+						<div class="modal__container">
+			
+							<header class="modal__header">
+								<h2 class="modal__title">Время работы</h2>
+								<button class="modal__close" title="Закрыть" data-custom-close></button>
+							</header>
+			
+							<div class="modal__wrap">
+								<span class="lang" key="Monday">Понедельник:</span> <span> 09:00 — 23:00</span> <br>
+								<span class="lang" key="Tuesday">Вторник:</span>  	<span >09:00 — 23:00</span> <br>
+								<span class="lang" key="Wednesday">Среда:</span> <span> 09:00 — 23:00</span> <br>
+								<span class="lang" key="Thursday">Четверг: </span><span> 09:00 — 23:00</span> <br>
+								<span class="lang" key="Friday">Пятница: </span><span> 09:00 — 23:00</span><br>
+								<span class="lang" key="Saturday">Суббота: </span><span>09:00 — 23:00</span><br>
+								<span class="lang" key="Sunday">Воскресенье: </span><span>09:00 — 23:00</span>
+						
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container info-centers">
+		<div class="info-card">
+			<h3 class="info-card-title">Информация:</h3>
+			<h5>Адрес: пр. Дзержинского, 104</h5>
+			<h5>Телефон: +375 29 625-15-95</h5>
+			<span class="info-card-span blue">Петровщина</span>
+			
+
+			
+			
+
+			<div class="info-wrap">
+			<a class="section-link lang button-center" href="https://www.titanminsk.by/" target="_blank" rel="noopener noreferrer" key="officialSite">Перейти на официальный сайт</a> <br>
+				
+			<button class="button home-callback__button " data-custom-open="modal" data-form="Форма секции Нам доверяют">Посмотреть время работы</button>
+		</div>
+
+		</div>
+
+		
+		<div class="imgcard">
+			<img src="/images/Centers/Titan/titan-01-card.jpg" alt="">
+		</div>
+	</div>
+	</section>
+
+
+	<section class="news-section">>
+		<div class="container">
+			<div class="row news__bottom">
+
+				<h2 class="news-title">Последние мероприятия</h2>
+				<div class="col-md-4 news__item-wrapper">
+					<a href="https://dana-mall.com/2755.html" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img src="/images/news/dana-mall-01.jpg" alt="Volkswagen заряжает футболом в Dana Mall»">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="14.06.2022">14.06.2022</div>
+							<div class="news-item__desc">Volkswagen заряжает футболом в Dana Mall</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="https://dana-mall.com/2758.html" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img src="/images/news/dana-mall-02.jpg" alt="«Пари-Матч заряжает футболом в Dana Mall»">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="14.06.2022">14.06.2022</div>
+							<div class="news-item__desc">Пари-Матч заряжает футболом в Dana Mall</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="https://dana-mall.com/1107.html" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img  src="/images/news/dana-mall-03.jpg" alt="Черная пятница">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="18.12.2021">18.12.2021</div>
+							<div class="news-item__desc">Черная пятница</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="https://dana-mall.com/1107.html" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img  src="/images/news/dana-mall-04.jpg" alt="Dana Mall Танцует">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="04.10.2018">04.10.2018</div>
+							<div class="news-item__desc">Dana Mall Танцует</div>
+						</div>
+					</a>
+				</div>
+
+			
+				
+			</div>
+			
+		</div>
+	</section>
+
+	
+	
+	
+	<!-- <section class="best-works">
+		<div class="filtration">
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+				<button class="btn lang" key="Pervomaiski district" onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
+				<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+		</div>
+	
+
+
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="section-title section-title--dotted">
+						<div class="section-title__name lang" key="">Магазины, услуги, кафе и рестораны Dana Mall</div>
+						
+						<a class="section-link lang" href="http://art.museum.by/" target="_blank" rel="noopener noreferrer" key="officialSite">
+							Перейти на официальный сайт
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="section__icon bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+							  </svg>
+						</a>
+					</div>
+					<a class="section-visit lang" target="_blank" href="https://artmuseum.by/visitors#museum-online-block" key="info">Информация для посетителей</a>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+
+		<div class="container">
+			<div class="row news__bottom">
+
+				<h2 class="news-title lang" key="news">Последние новости</h2>
+				<div class="col-md-4 news__item-wrapper">
+					<a href="#" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img src="/images/news.png" alt="Выставка «Традиционное декоративно-прикладное искусство Японии»">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="03.03.2022">03.03.2022</div>
+							<div class="news-item__desc lang" key="newsName">Выставка «Традиционное декоративно-прикладное искусство Японии»</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="#" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img src="/images/news.png" alt="«Ночь музеев-2022: Пространство Женщины»">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="6.05.2022">06.05.2022</div>
+							<div class="news-item__desc lang" key="newsName">Выставка «Традиционное декоративно-прикладное искусство Японии»</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="#" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img  src="/images/news.png" alt="Конкурс входного билета в Национальный художественный музей">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="27.04.2022">27.04.2022</div>
+							<div class="news-item__desc lang" key="newsName">Выставка «Традиционное декоративно-прикладное искусство Японии»</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 news__item-wrapper">
+					<a href="#" class="best-item">
+						<div class="best-item__img-wrapper">
+							<img  src="/images/news.png" alt="В День Матери музей делает подарок всем мамам и их ребятишкам">
+						</div>
+						<div class="best-item__content">
+							<div class="data-line" title="13.10.2009">13.10.2009</div>
+							<div class="news-item__desc lang" key="newsName">Выставка «Традиционное декоративно-прикладное искусство Японии»</div>
+						</div>
+					</a>
+				</div>
+
+			
+				
+			</div>
+			
+		</div>
+	
+
+	<div class="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A584db02fa5bcdf120f203c2abace8d8d918b76acd22248a0d3910040fe0dc42f&amp;width=100%25&amp;height=270&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
+
+	<section class="home-callback contact_section">
+
+		<div class="container">
+			<div class="row">
+				</div>
+			</div>
+		</div>
+
+	</section>
+ -->
+	<script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="/libs/micromodal/micromodal.min.js"></script>
+	<script src="/js/common.js"></script>
+ 	<script src="/js/filter.js"></script>
+</body>
+
+</html>

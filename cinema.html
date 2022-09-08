@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title class="lang" key="cinemas">Кинотеатры</title>
+	<meta name="description" content="Кинотеатры города Минска">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images/favicon.png">
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
+
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/media.css">
+	<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+
+</head>
+
+<body>
+	
+	<header class="header">
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6 user">
+						<li>
+							<a href="/pages/authorization.html">
+								<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+							</a>
+						</li>
+						
+					</div>
+
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><a href="/index.html" class="top-menu__link lang" key="home">Главная</a></li>
+						<li class="top-menu__item"><a href="/musems.html" class="top-menu__link lang" key="musems">Музеи</a></li>
+						<li class="top-menu__item"><a href="/theaters.html" class="top-menu__link lang" key="theaters">Театры</a></li>
+						<li class="top-menu__item"><span class="top-menu__link lang" key="cinemas">Кинотеатры</span></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
+						<li class="top-menu__item"><a href="/churches.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
+						<li class="top-menu__item"><a href="/centers.html" class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</a></li>
+						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 d-none d-lg-block nav-search-wrap">
+					<ul class="languages">
+						<li class="navbar-item-lang-en">
+							<button id="en" class="translate">en</button>
+						</li>
+						<li class="navbar-item-lang-en">
+							<button id="ru" class="translate">ru</button>
+						</li>
+					</ul>
+
+					<!-- ПОИСК -->
+					<!-- <div class="nav-search">
+						
+						<input class="search__txt lang" type="text" name="" placeholder="Поиск..." id='input' key="find">
+						<a class="search__btn" href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</div> -->
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<a href="#cinema"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
+</header>
+
+	<div class="home-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/Cinema/moskwa/moskwa-02.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="cinemasMinsk">Кинотеатры г. Минска</h2>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<section class="best-works">
+		<div class="filtration">
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+			<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+			<button class="btn lang"  key="Sovetski district"  onclick="filterSelection('sovetski')">Советский р-н</button>
+			<button class="btn lang"  key="Pervomaiski district"  onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
+		</div>
+
+		<div class="best-works__bottom">
+			<a name="cinema"></a>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Cinema/Belarus/Belarus-01.jpg" alt="Кинотеатр Беларусь">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="улица Романовская Слобода, 28" key="slaboda28">улица Романовская Слобода, 28</div>
+								<div class="best-item__desc lang" key="belarus">Кинотеатр "Беларусь"</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv sovetski">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Cinema/Mir/Mir-01.jpg" alt="Кинотеатр Мир">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Козлова, 4А" key="kozlova4">ул. Козлова, 4А</div>
+								<div class="best-item__desc lang" key="mir">Кинотеатр "Мир"</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Cinema/moskwa/moskwa-01.jpg" alt="Кинотеатр Москва">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="проспект Победителей, 13" key="pobediteley13">проспект Победителей, 13</div>
+								<div class="best-item__desc lang" key="moscwa">Кинотеатр "Москва"</div>
+							</div>
+						</a>
+					</div>
+<!-- 
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Cinema/Pobeda/Pobeda-01.jpg" alt="Кинотеатр Победа">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="проспект Независимости, 73" key="nezavisimosti73">проспект Независимости, 73</div>
+								<div class="best-item__desc lang" key="pobeda">Кинотеатр "Победа"</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Cinema/Dom-kino/Dom-kino-01.jpg" alt="Дом кино">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" key="tolbuhina" title="ул. Толбухина, 18">ул. Толбухина, 18</div>
+								<div class="best-item__desc lang" key="kino">Дом кино</div>
+							</div>
+						</a>
+					</div>
+ -->
+					
+				</div>
+				
+			</div>
+
+			<!-- <div id="click-to-hide" class="best-works__button-wrapper">
+				<button id="button" class="button button__text lang" key="more objects">
+					Больше объектов
+				</button>
+			</div> -->
+
+		</div>
+
+	</section>
+
+
+	
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/micromodal/micromodal.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="js/common.js"></script>
+	<script src="/js/filter.js"></script>
+</body>
+
+</html>

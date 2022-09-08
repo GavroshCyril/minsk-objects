@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title class="lang" key="theaters">Театры</title>
+	<meta name="description" content="Театры города Минска">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="/images/favicon.png">
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
+
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/media.css">
+
+	<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6 user">
+						<li>
+							<a href="/pages/authorization.html">
+								<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+							</a>
+						</li>
+						
+					</div>
+
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><a href="/index.html" class="top-menu__link lang" key="home">Главная</a></li>
+						<li class="top-menu__item"><a href="/musems.html" class="top-menu__link lang" key="musems">Музеи</a></li>
+						<li class="top-menu__item"><span class="top-menu__link lang" key="theaters">Театры</span></li>
+						<li class="top-menu__item"><a href="/cinema.html" class="top-menu__link lang" key="cinemas">Кинотеатры</a></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
+						<li class="top-menu__item"><a href="/churches.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
+						<li class="top-menu__item"><a href="/centers.html" class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</a></li>
+						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 d-none d-lg-block nav-search-wrap">
+					<ul class="languages">
+						<li class="navbar-item-lang-en">
+							<button id="en" class="translate">en</button>
+						</li>
+						<li class="navbar-item-lang-en">
+							<button id="ru" class="translate">ru</button>
+						</li>
+					</ul>
+
+					<!-- ПОИСК -->
+					<!-- <div class="nav-search">
+						
+						<input class="search__txt lang" type="text" name="" placeholder="Поиск..." id='input' key="find">
+						<a class="search__btn" href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</div> -->
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a href="#theaters"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
+</header>
+
+	<div class="home-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/Theaters/Music-theaters/Music-theaters-02.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="theatersMinsk">Театры г. Минска</h2>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<section class="best-works">
+		<div class="filtration">
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+				<button class="btn lang"  key="Leninsky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
+				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+		</div>
+
+		<div class="best-works__bottom">
+			<a name="theaters"></a>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
+						<a href="/pages/theaters/gorkova-theater.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Theaters/Gorkova/Gorkova-01.jpg" alt="Национальный академический драматический театр им. М. Горького">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="улица Володарского, 5" key="volodarskogo5">улица Володарского, 5</div>
+								<div class="best-item__desc lang" key="gorkova">Национальный академический драматический театр им. М. Горького</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="/pages/theaters/baletandopera.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Theaters/Opera-Balet/opera-balet-01.pic" alt="Национальный Академический Большой Театр Оперы и Балета">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="площадь Парижской Коммуны, 1" key="komuna">площадь Парижской Коммуны, 1</div>
+								<div class="best-item__desc lang" key="operabalet">Национальный Академический Большой Театр Оперы и Балета</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski" >
+						<a href="/pages/theaters/musicthatheater.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Theaters/Music-theaters/Music-theaters-06.jpg" alt="Белорусский государственный академический музыкальный театр">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Улица Мясникова, 44" key="myasnikova">ул. Улица Мясникова, 44</div>
+								<div class="best-item__desc lang" key="musictheater">Белорусский государственный академический музыкальный театр</div>
+							</div>
+						</a>
+					</div>
+
+			<!-- 		<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Theaters/Yanka-kupala/Yanka-kupala-01.jpg" alt="Национальный академический театр имени Янки Купалы">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Энгельса, 7" key="engelsa">ул. Энгельса, 7</div>
+								<div class="best-item__desc lang" key="kupala">Национальный академический театр имени Янки Купалы</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Theaters/Yunogo-zritelya/Yunogo-zritelya-02.jpg" alt="Белорусский государственный академический театр юного зрителя">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="улица Энгельса,  26" key="engelsa25">улица Энгельса, 26</div>
+								<div class="best-item__desc lang" key="younogo">Белорусский государственный академический театр юного зрителя</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Theaters/Dramaturgia/Dramaturgia-01.jpg" alt="Республиканский театр белорусской драматургии">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Кропоткина, 44" key="kropotkina">ул. Кропоткина, 44</div>
+								<div class="best-item__desc lang" key="dramaturgia">Республиканский театр белорусской драматургии</div>
+							</div>
+						</a>
+					</div>
+
+					<div id="hidden-element" class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
+						<a href="#" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Theaters/Lyalek/Lyalek-01.jpg" alt="Белорусский государственный театр кукол">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. Энгельса, 20" key="engelsa20">ул. Энгельса, 20</div>
+								<div class="best-item__desc lang" key="kukol">Белорусский государственный театр кукол</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div id="click-to-hide" class="best-works__button-wrapper">
+				<button id="button" class="button button__text lang" key="more objects">
+					Больше объектов
+				</button>
+			</div> -->
+
+		</div>
+
+	</section>
+
+	
+
+	
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/micromodal/micromodal.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="js/common.js"></script>
+	<script src="/js/filter.js"></script>
+
+</body>
+
+</html>

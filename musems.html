@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title class="lang" key="musems">Музеи</title>
+	<meta name="description" content="Музеи города Минска">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="/images/favicon.png">
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/media.css">
+
+	<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+<p>
+</head>
+
+<body>
+	<header class="header">
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6 user">
+						<li>
+							<a href="/pages/authorization.html">
+								<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+							</a>
+						</li>
+						
+					</div>
+
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><a href="/index.html" class="top-menu__link lang" key="home">Главная</a></li>
+						<li class="top-menu__item"><span class="top-menu__link lang" key="musems">Музеи</span></li>
+						<li class="top-menu__item"><a href="/theaters.html" class="top-menu__link lang" key="theaters">Театры</a></li>
+						<li class="top-menu__item"><a href="/cinema.html" class="top-menu__link lang" key="cinemas">Кинотеатры</a></li>
+						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
+						<li class="top-menu__item"><a href="/churches.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
+						<li class="top-menu__item"><a href="/centers.html" class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</a></li>
+						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 d-none d-lg-block nav-search-wrap">
+					<ul class="languages">
+						<li class="navbar-item-lang-en">
+							<button id="en" class="translate">en</button>
+						</li>
+						<li class="navbar-item-lang-en">
+							<button id="ru" class="translate">ru</button>
+						</li>
+					</ul>
+
+					<!-- ПОИСК -->
+					<!-- <div class="nav-search">
+						
+						<input class="search__txt lang" type="text" name="" placeholder="Поиск..." id='input' key="find">
+						<a class="search__btn" href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</div> -->
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a href="#musems"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
+</header>
+
+	<div class="home-slider">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/portfolio/Patriotic-War-014.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="musemsMinsk">Музеи г. Минска</h2>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<section class="best-works">
+		<div class="filtration">
+			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+				<button class="btn lang" key="Partizansky district" onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
+				<button class="btn lang"  key="Leninsky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
+				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+		</div>
+
+		<div class="best-works__bottom">
+			<a name="musems"></a>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4 best-works__item-wrapper  filterDiv leninskiy ">
+						<a href="/pages/musems/art-musem.html" class="best-item">
+							<div class="best-item__img-wrapper ">
+								<img src="images/portfolio/art-02.jpg" alt="Национальный художественный музей Республики Беларусь">
+							</div>
+							<div class="best-item__content ">
+								<div class="address-line lang" title="ул. Ленина, 20" key="lenina20">ул. Ленина, 20</div>
+								<div class="best-item__desc lang" key="Art">Национальный художественный музей Республики Беларусь</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv partizanskiy ">
+						<a href="/pages/musems/asgura-musem.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Musems/Asgura/azgura-10.jpg" alt="Мемориальный музей-мастерская З.И. Азгура">
+							</div>
+							<div class="best-item__content ">
+								<div class="address-line lang" title="ул. Азгура, 8" key="azgura8">ул. Азгура, 8</div>
+								<div class="best-item__desc lang" key="azgura">Мемориальный музей-мастерская З.И. Азгура</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="/pages/musems/war-musem.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Musems/Patriotic-War/Patriotic-War-02.jpg" alt="Белорусский государственный музей истории Великой Отечественной войны">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="просп. Победителей, 8" key="pobediteley8">просп. Победителей, 8</div>
+								<div class="best-item__desc lang" key="war">Белорусский государственный музей истории Великой Отечественной войны</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
+						<a href="/pages/musems/belaruscinema-musem.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img src="images/Musems/Belarusian-cinema/Belarusian-cinema-06.jpg" alt="Музей истории белорусского кино">
+							</div>
+							<div class="best-item__content frunzenskiy">
+								<div class="address-line lang" title="ул. Свердлова, 4" key="sverdlova4">ул. Свердлова, 4</div>
+								<div class="best-item__desc lang" key="kino">Музей истории белорусского кино</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
+						<a href="/pages/musems/hisrotical.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Musems/Historical/historical-01.jfif" alt="Национальный исторический музей Республики Беларусь">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="ул. К. Маркса, 12" key="marksa12">ул. К. Маркса, 12</div>
+								<div class="best-item__desc lang" key="historical">Национальный исторический музей Республики Беларусь</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
+						<a href="/pages/musems/yankakupala-musem.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Musems/Yanky-kupala/Yanky-kupala-01.jpg" alt="Государственный литературный музей Янки Купалы">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="улица Янки Купалы, 4" key="kupala4">улица Янки Купалы, 4</div>
+								<div class="best-item__desc lang" key="yankikupala">Государственный литературный музей Янки Купалы</div>
+							</div>
+						</a>
+					</div>
+					
+
+					<div  id="hidden-element" class="col-md-4 best-works__item-wrapper filterDiv ">
+						<a href="/pages/musems/aviation-musem.html" class="best-item">
+							<div class="best-item__img-wrapper">
+								<img  src="images/Musems/Aviation-technology/aviation-technology-04.jpg" alt="Музей авиационной техники">
+							</div>
+							<div class="best-item__content">
+								<div class="address-line lang" title="Минский р-н, пос. Боровая" key="borovaya">Минский р-н, пос. Боровая</div>
+								<div class="best-item__desc lang" key="aviation">Музей авиационной техники</div>
+							</div>
+						</a>
+					</div>
+
+
+					
+				</div>
+				
+			</div>
+
+			<div id="click-to-hide" class="best-works__button-wrapper">
+				<button id="button" class="button button__text lang" key="more objects">
+					Больше объектов
+				</button>
+			</div>
+
+		</div>
+
+	</section>
+
+	
+
+	
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/micromodal/micromodal.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="/js/filter.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
